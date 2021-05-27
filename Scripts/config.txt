@@ -1,5 +1,5 @@
 framework=WireCryptobox
-organization=wireapp
+organization=billypchan
 repository=wire-ios-cryptobox
 release-name-format=You should never {VERB} in {CITY}
 platforms=ios,osx
