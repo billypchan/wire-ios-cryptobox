@@ -23,4 +23,3 @@
 
 // info.plist
 INFOPLIST_PREPROCESS = YES
-EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
