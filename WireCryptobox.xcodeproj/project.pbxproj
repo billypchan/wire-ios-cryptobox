@@ -23,7 +23,6 @@
 		5471A6641D24215B0092A9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5471A6631D24215B0092A9A9 /* Assets.xcassets */; };
 		5471A6671D24215B0092A9A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5471A6651D24215B0092A9A9 /* LaunchScreen.storyboard */; };
 		5471A66E1D24221A0092A9A9 /* WireCryptobox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0928E2341BA0777A0057232E /* WireCryptobox.framework */; };
-		5471A66F1D24221A0092A9A9 /* WireCryptobox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0928E2341BA0777A0057232E /* WireCryptobox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5471A6741D242D740092A9A9 /* PointerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A6731D242D740092A9A9 /* PointerWrapper.swift */; };
 		5471A6781D242F8C0092A9A9 /* EncryptionSessionsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A6771D242F8C0092A9A9 /* EncryptionSessionsDirectory.swift */; };
 		54A1573F1D23C00500EB3B4F /* EncryptionContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A1573E1D23C00500EB3B4F /* EncryptionContextTests.swift */; };
@@ -131,17 +130,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5471A6721D24221B0092A9A9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5471A66F1D24221A0092A9A9 /* WireCryptobox.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -243,6 +231,7 @@
 		87B43C5820F4AAA00031DE41 /* GenericHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericHash.swift; sourceTree = "<group>"; };
 		A96E0113265FFA800034A057 /* WireUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WireUtilities.xcframework; path = Carthage/Build/WireUtilities.xcframework; sourceTree = "<group>"; };
 		A96E0114265FFA800034A057 /* WireSystem.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WireSystem.xcframework; path = Carthage/Build/WireSystem.xcframework; sourceTree = "<group>"; };
+		A9E6BE7D269749B500E410ED /* ios.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ios.xcconfig; path = "Carthage/Checkouts/wire-ios-system/Resources/Configurations/zmc-config/ios.xcconfig"; sourceTree = SOURCE_ROOT; };
 		BA7EF9691B7109B600204A8E /* WireCryptoboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WireCryptoboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7EF96F1B7109B600204A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEA2B85C24DAD1E700C6659E /* AEADEncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEADEncryption.swift; sourceTree = "<group>"; };
@@ -254,7 +243,6 @@
 		F1E148D0207D06EF00F81833 /* ios-test-target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ios-test-target.xcconfig"; sourceTree = "<group>"; };
 		F1E148D1207D06EF00F81833 /* ios-test-host.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "ios-test-host.xcconfig"; sourceTree = "<group>"; };
 		F1E148D3207D06EF00F81833 /* tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tests.xcconfig; sourceTree = "<group>"; };
-		F1E148D4207D06EF00F81833 /* ios.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ios.xcconfig; sourceTree = "<group>"; };
 		F50303291B8CFA2C0053E406 /* libcryptobox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcryptobox.a; sourceTree = "<group>"; };
 		F503032A1B8CFA2C0053E406 /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsodium.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -345,9 +333,9 @@
 		54B5E1DE1F0A482B001F43A6 /* zmc-config */ = {
 			isa = PBXGroup;
 			children = (
+				A9E6BE7D269749B500E410ED /* ios.xcconfig */,
 				F1E148D1207D06EF00F81833 /* ios-test-host.xcconfig */,
 				F1E148D0207D06EF00F81833 /* ios-test-target.xcconfig */,
-				F1E148D4207D06EF00F81833 /* ios.xcconfig */,
 				F1E148D3207D06EF00F81833 /* tests.xcconfig */,
 				54B5E1E01F0A482B001F43A6 /* project-common.xcconfig */,
 				54B5E1E11F0A482B001F43A6 /* project-debug.xcconfig */,
@@ -634,7 +622,6 @@
 				5471A6511D24215B0092A9A9 /* Sources */,
 				5471A6521D24215B0092A9A9 /* Frameworks */,
 				5471A6531D24215B0092A9A9 /* Resources */,
-				5471A6721D24221B0092A9A9 /* Embed Frameworks */,
 				54060B7E1DB7760C00AEA9BB /* CopyFiles */,
 			);
 			buildRules = (
@@ -672,7 +659,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Cryptobox;
 				TargetAttributes = {
 					0928E2331BA0777A0057232E = {
@@ -765,7 +752,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "mkdir -p Carthage/Build/iOS\n";
+			shellScript = "mkdir -p Carthage/Build\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -852,9 +839,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0928E3751BA17E300057232E /* WireCryptobox.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WireCryptobox/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wire.cryptobox;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 			};
 			name = Debug;
 		};
@@ -862,9 +852,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0928E3751BA17E300057232E /* WireCryptobox.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WireCryptobox/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wire.cryptobox;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 			};
 			name = Release;
 		};
@@ -916,9 +909,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1E148D0207D06EF00F81833 /* ios-test-target.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wire.cryptobox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/CryptoboxTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WireCryptoboxTestHost.app/WireCryptoboxTestHost";
 				VALIDATE_WORKSPACE = YES;
@@ -929,9 +926,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1E148D0207D06EF00F81833 /* ios-test-target.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(PRODUCT_NAME)/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wire.cryptobox.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/CryptoboxTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WireCryptoboxTestHost.app/WireCryptoboxTestHost";
 				VALIDATE_WORKSPACE = YES;
